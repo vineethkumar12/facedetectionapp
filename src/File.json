@@ -1,0 +1,106 @@
+[
+    {
+        "code": 10000,
+        "description": "Ok",
+        "req_id": "e9475553731ea30d63d25b1921460b54"
+    },
+    "outputs": [
+        {
+            "id": "0711fe2b2d38462eaab072b4ec43b0fe",
+            "status": {
+                "code": 10000,
+                "description": "Ok"
+            },
+            "created_at": "2022-07-16T19:16:01.884758500Z",
+            "model": {
+                "id": "face-detection",
+                "name": "Face",
+                "created_at": "2020-11-25T16:50:24.453038Z",
+                "modified_at": "2021-10-20T11:34:15.960670Z",
+                "app_id": "main",
+                "output_info": {
+                    "output_config": {
+                        "concepts_mutually_exclusive": false,
+                        "closed_environment": false,
+                        "max_concepts": 0,
+                        "min_value": 0
+                    },
+                    "message": "Show output_info with: GET /models/{model_id}/output_info",
+                    "fields_map": {
+                        "regions[...].data.concepts[...].id": "predicted_det_labels",
+                        "regions[...].data.concepts[...].value": "predicted_det_scores",
+                        "regions[...].region_info.bounding_box": "predicted_det_bboxes"
+                    },
+                    "params": {
+                        "detection_threshold": 0.9
+                    }
+                },
+                "model_version": {
+                    "id": "45fb9a671625463fa646c3523a3087d5",
+                    "created_at": "2021-03-04T17:40:26.081729Z",
+                    "status": {
+                        "code": 21100,
+                        "description": "Model is trained and ready"
+                    },
+                    "visibility": {
+                        "gettable": 50
+                    },
+                    "app_id": "main",
+                    "user_id": "clarifai",
+                    "metadata": {}
+                },
+                "display_name": "Face-visual-detector",
+                "user_id": "clarifai",
+                "input_info": {
+                    "fields_map": {
+                        "image": "images"
+                    }
+                },
+                "train_info": {},
+                "model_type_id": "visual-detector",
+                "visibility": {
+                    "gettable": 50
+                },
+                "metadata": null,
+                "presets": null,
+                "languages": [],
+                "import_info": {},
+                "workflow_recommended": false
+            },
+            "input": {
+                "id": "1b65dfea604b453abe082b3176b6daaf",
+                "data": {
+                    "image": {
+                        "url": "https://samples.clarifai.com/metro-north.jpg"
+                    }
+                }
+            },
+            "data": {
+                "regions": [
+                    {
+                        "id": "2ac687215ba963a8935d484f8a0349f3",
+                        "region_info": {
+                            "bounding_box": {
+                                "top_row": 0.5015593,
+                                "left_col": 0.6621433,
+                                "bottom_row": 0.5226532,
+                                "right_col": 0.6744473
+                            }
+                        },
+                        "data": {
+                            "concepts": [
+                                {
+                                    "id": "ai_b1b1b1b1",
+                                    "name": "BINARY_POSITIVE",
+                                    "value": 0.92900187,
+                                    "app_id": "main"
+                                }
+                            ]
+                        },
+                        "value": 0.92900187
+                    }
+                ]
+            }
+        }
+    ]
+}
