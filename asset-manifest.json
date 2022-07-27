@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/face/static/css/main.b9b35c82.css",
-    "main.js": "/face/static/js/main.48ef0eca.js",
-    "static/js/787.59887e1e.chunk.js": "/face/static/js/787.59887e1e.chunk.js",
-    "index.html": "/face/index.html",
-    "main.b9b35c82.css.map": "/face/static/css/main.b9b35c82.css.map",
-    "main.48ef0eca.js.map": "/face/static/js/main.48ef0eca.js.map",
-    "787.59887e1e.chunk.js.map": "/face/static/js/787.59887e1e.chunk.js.map"
+    "main.css": "/facedetectionapp/static/css/main.b9b35c82.css",
+    "main.js": "/facedetectionapp/static/js/main.2bc6c202.js",
+    "static/js/787.59887e1e.chunk.js": "/facedetectionapp/static/js/787.59887e1e.chunk.js",
+    "index.html": "/facedetectionapp/index.html",
+    "main.b9b35c82.css.map": "/facedetectionapp/static/css/main.b9b35c82.css.map",
+    "main.2bc6c202.js.map": "/facedetectionapp/static/js/main.2bc6c202.js.map",
+    "787.59887e1e.chunk.js.map": "/facedetectionapp/static/js/787.59887e1e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9b35c82.css",
-    "static/js/main.48ef0eca.js"
+    "static/js/main.2bc6c202.js"
   ]
 }
