@@ -22,7 +22,7 @@ export const Signin=({change,userdata})=> {
      e.preventDefault();
    
 
-      fetch('https://h-ziym.onrender.com/signin',{
+      fetch('https://ser-miye.onrender.com/signin',{
         method:'post',
         headers:{'Content-Type':'application/json',
         "Access-Control-Allow-Origin": "*",
