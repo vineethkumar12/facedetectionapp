@@ -17,7 +17,7 @@ onsubmit=(e)=>{
 
   e.preventDefault();
 
-   fetch('https://hi-zssp.onrender.com/register',{
+   fetch('https://h-ziym.onrender.com/register',{
      method:'post',
      headers:{'Content-Type':'application/json',
     "Access-Control-Allow-Origin": "*",
