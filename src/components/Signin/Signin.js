@@ -22,11 +22,11 @@ export const Signin=({change,userdata})=> {
      e.preventDefault();
    
 
-      fetch('https://h-ziyml.onrender.com/signin',{
+      fetch('https://h-ziym.onrender.com/signin',{
         method:'post',
         headers:{'Content-Type':'application/json',
         "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "*"},
+        },
         body:JSON.stringify({
           email:data.signemail,
           password:data.signpassword ,
