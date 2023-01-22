@@ -17,9 +17,11 @@ onsubmit=(e)=>{
 
   e.preventDefault();
 
-   fetch('https://backend-rv0q.onrender.com/register',{
+   fetch('https://hi-zssp.onrender.com/register',{
      method:'post',
-     headers:{'Content-Type':'application/json'},
+     headers:{'Content-Type':'application/json',
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "*"},
       body:JSON.stringify({
         email:data.regiemail,
         password:data.regipassword ,

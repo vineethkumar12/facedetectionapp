@@ -22,9 +22,11 @@ export const Signin=({change,userdata})=> {
      e.preventDefault();
    
 
-      fetch('https://backend-rv0q.onrender.com/signin',{
+      fetch('https://hi-zssp.onrender.com/signin',{
         method:'post',
-        headers:{'Content-Type':'application/json'},
+        headers:{'Content-Type':'application/json',
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "*"},
         body:JSON.stringify({
           email:data.signemail,
           password:data.signpassword ,
