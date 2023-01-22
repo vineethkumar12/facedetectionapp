@@ -17,7 +17,7 @@ onsubmit=(e)=>{
 
   e.preventDefault();
 
-   fetch('https://node-server-n9qy.onrender.com/register',{
+   fetch('https://node-server3.onrender.com/register',{
      method:'post',
      headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
