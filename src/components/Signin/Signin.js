@@ -25,7 +25,7 @@ export const Signin=({change,userdata})=> {
       fetch('https://h-ziym.onrender.com/signin',{
         method:'post',
         headers:{'Content-Type':'application/json',
-        "Access-Control-Allow-Origin": "*",
+      
         },
         body:JSON.stringify({
           email:data.signemail,

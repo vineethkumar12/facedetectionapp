@@ -20,7 +20,7 @@ onsubmit=(e)=>{
    fetch('https://h-ziym.onrender.com/register',{
      method:'post',
      headers:{'Content-Type':'application/json',
-    "Access-Control-Allow-Origin": "*",
+   
    },
       body:JSON.stringify({
         email:data.regiemail,
