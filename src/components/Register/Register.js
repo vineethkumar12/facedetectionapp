@@ -34,7 +34,7 @@ onsubmit=(e)=>{
        {  
          change('home')  
          userdata(result) 
-        // console.log(result) 
+         console.log(result.name) 
          }
        else{
          alert("invalid register")
