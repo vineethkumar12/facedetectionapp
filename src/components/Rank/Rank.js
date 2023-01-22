@@ -8,7 +8,7 @@ export const Rank = ({name,entries}) => {
      <div className='white  f3 '>
      { `${name} your current entries is`}
      <div className="white f1">
-         { entries} 
+         { entries ? entries:"0"} 
      </div>
      </div>   
      </div>

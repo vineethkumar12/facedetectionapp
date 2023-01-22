@@ -17,7 +17,7 @@ onsubmit=(e)=>{
 
   e.preventDefault();
 
-   fetch('http://localhost:5000/register',{
+   fetch('https://node-server-n9qy.onrender.com/register',{
      method:'post',
      headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
@@ -27,12 +27,12 @@ onsubmit=(e)=>{
       })})
       .then(response=>response.json())
       .then(result=>{ 
-       
-      if(result.name&& result.password&&result.email)
+         
+      if(result.name!== "" && result.password !== "" && result.email !== "")
        {  
          change('home')  
          userdata(result) 
-         console.log(result) 
+        // console.log(result) 
          }
        else{
          alert("invalid register")

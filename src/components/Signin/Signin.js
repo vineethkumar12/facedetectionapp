@@ -17,43 +17,38 @@ export const Signin=({change,userdata})=> {
  
   
     onsubmit=(e)=>{ 
-      const password1 = document.getElementById("password")
-      const email = document.getElementById("email")
+     /* const password1 = document.getElementById("password")
+      const email = document.getElementById("email")*/
      e.preventDefault();
    
 
-      fetch('http://localhost:5000/signin',{
-        method:'get',
-        headers:{'Content-Type':'application/json'} })
+      fetch('https://node-server-n9qy.onrender.com/signin',{
+        method:'post',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          email:data.signemail,
+          password:data.signpassword ,
+         
+        }) })
         
          .then(response=>response.json())
          .then((user)=>{ 
          
          
-           
+            console.log(user)
              
            
-           user.filter((user,i)=>{
+           
           
             
-          if(user.email === data.signemail && user.password === data.signpassword) 
-          {    
-               userdata(user) 
+            if(user.id)
+              {userdata(user) 
                change('home')
-              }   
-         if((user.email !== data.signemail) && (user.id === "124") )
-          {   
-            email.style.border = 'solid 3px red'; 
-          console.log(user.email,user.password,user.id)
-         } 
-          
-        if((user.password !== data.signpassword) && (user.id === "124"))
-        { password1.style.border = 'solid 3px red';
-         }
-         
-          return ''   
-
-          })
+              }
+             else{
+              alert('invalid user')
+             }
+        
             
              
           
@@ -65,7 +60,6 @@ export const Signin=({change,userdata})=> {
  
       
 
-      console.log(data) 
   
 
     }

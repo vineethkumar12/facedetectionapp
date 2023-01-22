@@ -171,10 +171,13 @@ return {
               method:'put',
               headers:{'Content-Type':'application/json'},
                body:JSON.stringify({
-                 id:user.id
-               })}).then(response=>response.json())
-               .then(result=>{
-                  setuser(Object.assign(user,{entries:result}))
+                 id:user.id,
+             
+               })})
+               .then(response=>response.json())
+               .then(result=>{ 
+                
+                  setuser(Object.assign(user,{entries:result.entries}))
                 })
             displayFaceBox(CalculateFaceLoaction(result)) 
           })
@@ -183,7 +186,7 @@ return {
           
    } 
    
-
+  
 
   
 
