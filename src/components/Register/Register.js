@@ -17,7 +17,7 @@ onsubmit=(e)=>{
 
   e.preventDefault();
 
-   fetch('https://h-ziym.onrender.com/register',{
+   fetch('https://s-03q4.onrender.com/register',{
      method:'post',
      headers:{'Content-Type':'application/json',
    
