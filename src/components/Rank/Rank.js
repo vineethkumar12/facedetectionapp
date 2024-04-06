@@ -1,18 +1,13 @@
-import React from 'react'
-import './Rank.css' 
+import React from "react";
+import "./Rank.css";
 
-export const Rank = ({name,entries}) => {
+export const Rank = ({ name, entries }) => {
   return (
-    
-    <div  className='Rank center'>
-     <div className='white  f3 '>
-     { `${name} your current entries is`}
-     <div className="white f1">
-         { entries ? entries:"0"} 
-     </div>
-     </div>   
-     </div>
-
-  
-  )
-}
+    <div className="Rank center" style={{ marginTop: "10%" }}>
+      <div className="white  f3 ">
+        <h1>Welcome</h1>
+        <h3 style={{ textTransform: "uppercase" }}>{name} </h3>
+      </div>
+    </div>
+  );
+};

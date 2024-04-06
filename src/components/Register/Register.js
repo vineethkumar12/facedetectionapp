@@ -17,11 +17,9 @@ onsubmit=(e)=>{
 
   e.preventDefault();
 
-   fetch('https://s-03q4.onrender.com/register',{
+   fetch('http://localhost:3000/register',{
      method:'post',
-     headers:{'Content-Type':'application/json',
-   
-   },
+     headers:{'Content-Type':'application/json'},
       body:JSON.stringify({
         email:data.regiemail,
         password:data.regipassword ,
@@ -34,7 +32,7 @@ onsubmit=(e)=>{
        {  
          change('home')  
          userdata(result) 
-         console.log(result.name) 
+        // console.log(result) 
          }
        else{
          alert("invalid register")
