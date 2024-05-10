@@ -132,18 +132,18 @@ function App() {
     )
       .then((response) => response.json())
       .then((result) => {
-        if (result)
-          fetch("https://vineethkumar12.github.io/facedetectionapp/image", {
-            method: "put",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              id: user.id,
-            }),
-          })
-            .then((response) => response.json())
-            .then((result) => {
-              setuser(Object.assign(user, { entries: result.entries }));
-            });
+        // if (result)
+        //   fetch("https://vineethkumar12.github.io/facedetectionapp/image", {
+        //     method: "put",
+        //     headers: { "Content-Type": "application/json" },
+        //     body: JSON.stringify({
+        //       id: user.id,
+        //     }),
+        //   })
+        //     .then((response) => response.json())
+        //     .then((result) => {
+        //       setuser(Object.assign(user, { entries: result.entries }));
+        //     });
         displayFaceBox(CalculateFaceLoaction(result));
       })
       .catch((error) => console.log("error", error));
