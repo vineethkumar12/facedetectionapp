@@ -133,7 +133,7 @@ function App() {
       .then((response) => response.json())
       .then((result) => {
         if (result)
-          fetch("https://localhost:3000/image", {
+          fetch("https://vineethkumar12.github.io/facedetectionapp/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
