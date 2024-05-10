@@ -4,7 +4,7 @@ import "./Face.css";
 export const Face = ({ image, box }) => {
   console.log(box);
   return (
-    <div className="center ">
+    <div className="center1 ">
       <div className=" absolute mt2">
         <img id="input-image" className="image w6 " src={image} alt="" />
         <div

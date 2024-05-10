@@ -73,9 +73,6 @@ function App() {
     }
     setroute(route1);
   };
-  const clear = () => {
-    setinput("");
-  };
 
   const onSubmit = () => {
     setimageurl(input);
@@ -136,7 +133,7 @@ function App() {
       .then((response) => response.json())
       .then((result) => {
         if (result)
-          fetch("https://vineethkumar12.github.io/facedetectionapp/image", {
+          fetch("https://localhost:3000/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -164,7 +161,7 @@ function App() {
             onchange={onchange}
             input1={input}
             onbuttonclick={onSubmit}
-            clear={clear}
+            setinput={setinput}
           />
           <Face box={box} image={imageurl} />
         </div>
