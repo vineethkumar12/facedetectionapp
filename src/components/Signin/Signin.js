@@ -11,7 +11,7 @@ export const Signin = ({ change, userdata }) => {
       const email = document.getElementById("email")*/
     e.preventDefault();
 
-    fetch("https://server3-nsfe.onrender.com//signin", {
+    fetch("https://server3-nsfe.onrender.com/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
