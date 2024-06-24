@@ -75,7 +75,8 @@ function App() {
   };
 
   const onSubmit = () => {
-    setimageurl(input);
+    if (input.lenght > 25) setimageurl(input);
+    else alert("please place the image url in input");
 
     ////////////////////////////////////////////////////////////////////////////////////
     // In this section, we set the user authentication, app and model IDs, and the URL
