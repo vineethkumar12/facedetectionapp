@@ -11,7 +11,7 @@ export const Signin = ({ change, userdata }) => {
       const email = document.getElementById("email")*/
     e.preventDefault();
 
-    fetch("https://server3-nsfe.onrender.com/signin", {
+    fetch("https://server-peach-ten.vercel.app/signin", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -21,7 +21,7 @@ export const Signin = ({ change, userdata }) => {
     })
       .then((response) => response.json())
       .then((user) => {
-        if (user.id) {
+        if (user.email) {
           userdata(user);
 
           change("home");

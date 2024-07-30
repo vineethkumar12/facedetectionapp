@@ -10,7 +10,7 @@ export const Register = ({ change, userdata }) => {
   onsubmit = (e) => {
     e.preventDefault();
 
-    fetch("https://server3-nsfe.onrender.com/register", {
+    fetch("https://server-peach-ten.vercel.app/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
