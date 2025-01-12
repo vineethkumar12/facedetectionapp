@@ -1,6 +1,6 @@
 import React from "react";
 import "./image.css";
-export const ImageLinkForm = ({ onchange, onbuttonclick }) => {
+export const ImageLinkForm = ({ input1, onchange, onbuttonclick }) => {
   return (
     <div className="h1">
       <p className="f3">

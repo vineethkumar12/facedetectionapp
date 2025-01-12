@@ -75,7 +75,7 @@ function App() {
   };
 
   const onSubmit = () => {
-    if (input.lenght > 25) setimageurl(input);
+    if (input.length > 25) setimageurl(input);
     else alert("please place the image url in input");
 
     ////////////////////////////////////////////////////////////////////////////////////
